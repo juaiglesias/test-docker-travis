@@ -2,8 +2,8 @@ sudo: required
 services:
 - docker
 script:
-- docker build -t juaiglesias/node .
-- docker images juaiglesias/node
+- docker build -t juaiglesias/travis-examples .
+- docker images juaiglesias/travis-examples
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker push $DOCKER_USERNAME/travis-examples:latest
 env:
