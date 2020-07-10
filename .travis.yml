@@ -5,7 +5,7 @@ script:
 - docker build -t juaiglesias/node .
 - docker images juaiglesias/node
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-- docker push $DOCKER_USERNAME/travis-examples
+- docker push $DOCKER_USERNAME/travis-examples:latest
 env:
   global:
   - secure: azmXQSokn21QB0Ndd6caSasgDlKCuQ6F9efGC+sBX6ZQC3wSHUzVCLS6cZjstPiy3RnNvIf3R8zFhh5hpSm0eUp3HpqLDeS6+CMXPJPBb/nvq6vAsX1dDkMQXyeQ9YVlrvGRefjq+eg9uMkBj/qYbQivlzsBhqddT3wznqQXoaZoOWkqMUXJjvmjZg31FqKc8KbXnZKhc7JkQ1sw+4UUWv6aSIaA4EXDjSrU+yasOznUddVzn/beqmpR9V7AGuQH+SunjOp/6VlU937zAA2BpaZ17P1j4++WNKb707XHIAkzQMdfDIoPTV7uiggI32pWLekgGpgrsJh4lfq5yDlN/5Yj/9FI3l8tMDz+AenggOCeJvJUS25dsKjSyLCd1pXufnNIwGysT/H8fzZeG64rbxk6XP2UlQuVgcvI3l4iFFEI1uIaNmlsRX+06CavqRFZ1qCNwjhN646vWfWCkyAYRV60pDynURmR9J7i4V2ksA2jb6/wHAoUc3KvqMSAlkP+t46DL9jrFI2WppocyFQYqktytM62YA7RoQqJBUepNOvq9l2Ky5oHbdVjBey6Ovsr8uPf19uQDMYdw32j40Yf9YQmnWeelUWj0uCHorV+sv62a9O6efHYf37WiFW1DXs5Yd0lni8cu/IRkBWFc6eDawyPS+HxtDwLYKtjfHYhmXc=
